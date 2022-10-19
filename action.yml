@@ -1,0 +1,13 @@
+name: 'PlayEveryWare/action-get-unity-changeset'
+description: 'Gets the Unity changeset id for a given version'
+inputs:
+  unity-version:
+    description: Version of unity needed (2021.2.9f1)
+    required: true
+outputs:
+  changeset:
+    description: Unity changeset id
+
+runs:
+  using: node16
+  main: dist/index.js
